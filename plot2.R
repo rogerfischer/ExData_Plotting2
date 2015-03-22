@@ -31,5 +31,5 @@ par(mar = c(5, 5, 4, 2))
 plot(x = embyyear$year, y = embyyear$em, xlab = "Year", ylab = "Amount of PM2.5 emitted, in tons", type = "h", col = "red", lwd = 5, main = "Baltimore PM2.5 Emissions in 1999, 2002, 2005, 2008")
 
 ## Creating the png file 
-dev.copy(png, file = "plot2.png", width = 480, height = 480)  
+dev.copy(png, file = "plot2.png", width = 540, height = 480)  
 dev.off() 
