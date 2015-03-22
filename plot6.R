@@ -15,7 +15,7 @@ losangeles <- subset(NEI, NEI$fips == "06037")
 
 ## Combine Baltimore and Los Angeles
 labal <- rbind(baltimore, losangeles)
-fips <- factor(fips)
+fips <- factor(labal$fips)
 
 ## Create the plot
 g <- qplot(year, Emissions, data = labal, geom = "point", method = "lm", facets = .~fips, color = fips)
